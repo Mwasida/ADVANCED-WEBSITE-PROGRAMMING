@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="width: fit-content; background-color: lightgrey;">
+    <legend style="text-align: center;">PIZZA ORDER FORM</legend>
+    <div class ="mwasida_form">
+    <form>
+    <fieldset>
+        <legend>Delivery Address</legend>
+      Full Name:
+      <input type="text" name ="fname" placeholder="Full Name">
+      Street Address:
+      <input type="text" name ="address" placeholder="Address">
+      <br><br>
+      Phone:
+      <input type="text" name ="phone" placeholder="phone">
+      Email:
+      <input type="email" name="email" placeholder="Email">
+      <br><br>
+      Password:
+      <input type ="password" name ="password" placeholder="password">
+      </fieldset>
+
+      <fieldset>
+       <legend>Payment Information</legend>
+       Card Type:
+       <select name ="Card Type">
+            <option value="Visa card">Visa Card</option>
+            <option value="Master Card">Master Card</option>
+            <option value ="Discover">Discover</option>
+       </select>
+       Card Number:
+       <input type ="number" name="card number" placeholder="Card Number">
+       <br><br>
+       Name on Card:
+       <input type ="text" name="card" placeholder="Name">
+
+      </fieldset>
+      <form>
+        <fieldset style="width: fit-content;">
+            <legend>Customize Your Pizza</legend>
+            Pizza size:
+            <select name ="size">
+                <option value ="Large">Large</option>
+                <option value ="medium">medium</option>
+                <option value ="small">small</option>
+            </select>
+            Quantity:
+            <input type="number" name="quantity">
+            <br><br>
+            Spices:
+            <input type="checkbox" name="viungo" value="Black pepper">Black peppper
+            <input type ="checkbox" name="viungo" values="Bell pepper">Bell pepper
+            <input type="checkbox" name="viungo" values="Mayonaise">Mayonaise
+            <br><br>
+            Other Requirement:
+            <textarea rows = "3" cols="11" placeholder="Any other Requarements"></textarea>
+
+            <input type="radio" name="Animal" value="Meat">Meat
+            <input type="radio" name="Animal" value="Fish">Fish
+            <input type="radio" name="Animal" value="Cow">Cow
+            <input type="radio" name="Animal" value="chicken">chicken
+
+        </fieldset>
+        <br>
+        <input type="submit" name="clear order" value ="clear order">
+        <input type="submit" name="Place order" value ="Place order"> 
+    </form> 
+</div>
+</fieldset>>
+</body>
+</html>
