@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        mycountry = {
+            country:"Tanzania",
+            population:20,
+            capital:"Dar-es-Salam",
+            language:"Swahili",
+            neib:[]
+        }
+        console.log(`${mycountry.country} has ${mycountry.population} million ${mycountry.language}speaking people ${mycountry.neib.length} neighbouring countries and capital called${mycountry.capital}`)
+        mycountry.pop += 2;
+        mycountry["pop"] -= 2;
+        mycountry.describe = function(){
+            console.log(`${this.country} has ${this.population} million ${this.language}speaking people ${this.neib.length} neighbouring countries and capital called${this.capital}`);
+        
+        }
+        mycountry.describe();
+        mycountry.checkIsland = function(){
+            this.isIsland =(this.neib.length == 0);
+        }
+        mycountry.checkIsland();
+       console.log(mycountry.isIsland);
+    </script>
+    </script>
+    
+</body>
+</html>

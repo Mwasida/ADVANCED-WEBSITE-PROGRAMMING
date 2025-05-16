@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myname(){
+            let name=document.getElementById("name");
+            let username=document.getElementById("user_name");
+            if(name.value.length>3){
+                username.innerHTML="welcome to the site " +name.value;
+            }else{
+                alert("name must at least 3 character");
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>what is your name?</p>
+    <input type="text" id="name" value="">
+    <button onclick="myname()">submit</button>
+    <p id="user_name"></p>
+</body>
+</html>
