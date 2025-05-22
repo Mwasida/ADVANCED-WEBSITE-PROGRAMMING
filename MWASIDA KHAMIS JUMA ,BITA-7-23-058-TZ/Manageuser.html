@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage user</title>
+     <link rel="stylesheet"a href="css/bootstrap.min.css">
+    <style>
+        body{
+    background: linear-gradient(to right, white,);
+}
+.header{
+    background: black;
+    color: white;
+    justify-content: space-between;
+    padding: 10px 30px;
+    display: flex;
+
+}
+
+.nav-link a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>
+            Library System
+        </div>
+        <nav class="nav-link">
+            <a href="#">Manage users</a>
+            <a href="#">Manage books</a>
+            <a href="#">Manage Members</a>
+            <a href="#">Book Issurance</a>
+            <a href="#">Manage Returns</a>
+            <a href="#">Report</a>
+        
+            <div class="container mt-4">
+  <h3>Manage Users</h3>
+  <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#addUserModal">Add User</button>
+  <table id="usersTable" class="table table-striped">
+    <thead><tr><th>Name</th><th>Role</th><th>Email</th><th>Edit</th><th>Delete</th><th>Status</th></tr></thead>
+    <tbody><tr><td>jane due</td>Admin<td></td><td>jane@example.com</td></tr></tbody>
+  </table>
+</div>
+
+<div class="modal fade" id="addUserModal" tabindex="-1">
+  <div class="modal-dialog">
+    <form class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Add User</h5></div>
+      <div class="modal-body">
+        <input type="text" class="form-control mb-2" placeholder="Username">
+        <input type="email" class="form-control mb-2" placeholder="Email">
+        <input type="password" class="form-control mb-2" placeholder="Password">
+      </div>
+      <div class="modal-footer">
+         <button class="btn btn-grey" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-primary">Save</button>
+      </div>
+
+       <div class="footer"><br>
+    <hr>
+    © 2025 Zanzibar Library Management System All right reserved
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.js"></script>
+
+    
+    </form>
+  </div>
+</div>
+    
+</body>
+</html>

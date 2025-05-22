@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet"a href="css/bootstrap.min.css">
+</head>
+<body>
+       body>
+<div class="container mt-4">
+  <h3>Manage Courses</h3>
+  <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#issuebookModal">ISSUE BOOK</button>
+  <table id="issueTable" class="table table-striped">
+    <thead><tr><th>Book title</th><th>Member name</th><th>Issue Date</th><th>Return date</th></th>Status</th></tr></thead>
+    <tbody><tr><td>clearn code</td><td>june due</td><td>2025-05-10</td><td>2025-o5-24</td><td>return</td></tr></tbody>
+    <tbody><tr><td>introduction to algorithm</td><td>john smith</td><td>2025-05-15</td><td>2025-05-29</td><td>Return</td></tr></tbody>
+
+  </table>
+</div>
+
+<div class="modal fade" id="issuebookeModal" tabindex="-1">
+  <div class="modal-dialog">
+    <form class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">issue books</h5></div>
+      <div class="modal-body">
+        <input type="text" class="form-control mb-2" placeholder="Book title">
+        <input type="text" class="form-control mb-2" placeholder="Member name">
+        <input type="number" class="form-control mb-2" placeholder="issue date">
+        <input type="number" class="form-control mb-2" placeholder="return date">
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-grey" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.js"></script>
+<script>$(document).ready(() => $('#issuebookTable').DataTable());</script>
+</body>
+</html>
+
+    
+</body>
+</html>
+    
+</body>
+</html>

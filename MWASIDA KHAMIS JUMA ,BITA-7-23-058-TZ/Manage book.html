@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage books</title>
+     <link rel="stylesheet"a href="css/bootstrap.min.css">
+</head>
+<body>
+    body>
+<div class="container mt-4">
+  <h3>Manage Courses</h3>
+  <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#addbookModal">Add new book</button>
+  <table id="booksTable" class="table table-striped">
+    <thead><tr><th>Title</th><th>ISNB</th><th>AUTHOR</th><th>PUBLISHER</th></tr></thead>
+    <tbody><tr><td>The great grasb</td><td>1233456777</td><td>F.scort</td><td>scribner</td></tr></tbody>
+  </table>
+</div>
+
+<div class="modal fade" id="addCourseModal" tabindex="-1">
+  <div class="modal-dialog">
+    <form class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Add books</h5></div>
+      <div class="modal-body">
+        <input type="text" class="form-control mb-2" placeholder="title">
+        <input type="text" class="form-control mb-2" placeholder="ISBN">
+        <input type="number" class="form-control mb-2" placeholder="AUTHOR">
+        <input type="number" class="form-control mb-2" placeholder="PUBLISHER">
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-primary">Save</button>
+      </div>
+    </form>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.js"></script>
+<script>$(document).ready(() => $('#coursesTable').DataTable());</script>
+</body>
+</html>
+
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage  Books Return</title>
+</head>
+<body>
+<div class="container mt-4">
+  <h3>Manage Results</h3>
+  <button class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#recordreturn">Record return</button>
+  <button class="btn btn-info mb-2" data-bs-toggle="modal" data-bs-target="#viewmemberhistory">View member history</button>
+  <table id="Manage book return" class="table table-striped">
+    <thead><tr><th>Book title></th><th>Member name</th><th>Issue date</th><th>return date</th><th>Status</th></tr></thead>
+    <tbody><tr><td>Design pattern</td><td>Zhra Nassor</td><td>2025-05-04</td><td>2025-05-17</td><td>return</td></tr></tbody>
+    <tbody><tr><td>The pragmatic pragmmer</td><td>Ali haji</td><td>2025-05-01</td><td>2025-05-10</td><td>return</td></tr>
+  </table>
+</div>
+
+<div class="modal fade" id="recordreturnModal" tabindex="-1">
+  <div class="modal-dialog">
+    <form class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">record return</h5></div>
+      <div class="modal-body">
+        <input type="file" class="form-control mb-2">
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-grey" data-bs-dismiss="modal">Cancel</button>
+        <button class="btn btn-green">save return</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal fade" id="returnhistorytomemberModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title"></h5></div>
+      <div class="modal-body">
+        <p>Book title: Introduction to AI<br>Issue date: 2025-04-15<br>return date: 2025-04-30<br>Status:return</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-grey" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>$(document).ready(() => $('#resultsTable').DataTable());</script>
+</body>
+</html>
+    
+</body>
+</html>
